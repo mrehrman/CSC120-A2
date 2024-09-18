@@ -1,6 +1,6 @@
-class Computer:
+class Computer: #Class for the computer object
 
-    # What attributes will it need?
+    #Attributes for the Computer class
 
     description: str
     processor_type: str
@@ -10,9 +10,10 @@ class Computer:
     year_made: int
     price: int
 
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
 
+    """
+    Constructor that creates a computer object.
+    """
     def __init__ (self, description: str, 
                   processor_type: str, 
                   hard_drive_capacity: int, 
@@ -28,11 +29,16 @@ class Computer:
         self.year_made = year_made
         self.price = price
 
-    # What methods will you need?
-
+    # Methods for the Computer class
+    """
+    Updates a computer object's price.
+    """
     def update_price(self, new_price: int):
         self.price = new_price
 
+    """
+    Updates a computer object's operating system.
+    """
     def update_OS(self, new_OS: str):
         self.operating_system = new_OS
 
