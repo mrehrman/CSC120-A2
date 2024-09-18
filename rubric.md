@@ -31,7 +31,7 @@ __YES__ 1 pt: Can successfully remove a `Computer` from the inventory
 
 __YES__ 1 pt: Can successfully update the price/OS of a `Computer` contained in the inventory
 
-__PART__ 1 pt: Program prints appropriate error messages
+__YES__ 1 pt: Program prints appropriate error messages
 
 ## General Items (10 pts):
 
@@ -47,4 +47,4 @@ __YES___ 1 pt: Methods and variables all have clear and descriptive names
 
 _YES____ 1 pt: All required files included with submission (including completed checklist file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+___YES__ 1 pt: `reflection.md` contains your reflection on the assignment
