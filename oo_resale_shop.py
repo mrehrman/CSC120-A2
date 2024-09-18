@@ -35,21 +35,22 @@ class ResaleShop: #Class for the ResaleShop object
     computer if it is the inventory, prints error message otherwise
     """
     def update_price(self, item_id: int, new_price: int):
-        if self.item_id in self.inventory:
-            self.inventory[self.item_id]["price"] = new_price
+        print(item_id in self.inventory)
+        if item_id in self.inventory:
+            self.inventory[item_id]["price"] = new_price
         else:
-            print("Item", self.item_id, "not found. Cannot update price.")
+            print("Item", item_id, "not found. Cannot update price.")
 
     """
     Takes in an item_id, removes the associated computer if it is the inventory, 
     prints error message otherwise
     """
     def sell(self, item_id: int):
-        if self.item_id in self.inventory:
+        if item_id in self.inventory:
             del self.inventory[item_id]
-            print("Item", self.item_id, "sold!")
+            print("Item", item_id, "sold!")
         else: 
-            print("Item", self.item_id, "not found. Please select another item to sell.")
+            print("Item", item_id, "not found. Please select another item to sell.")
 
     """
     prints all the items in the inventory (if it isn't empty), prints error otherwise
@@ -64,8 +65,14 @@ class ResaleShop: #Class for the ResaleShop object
         else:
             print("No inventory to display.")
 
+    """
+    Takes in an item ID and optional new operating system. Checks if the computer associated with the ID 
+    is in the inventory and updates its price based on its year made. If it is in the inventory and 
+    a new OS was given, updates the computer's OS. 
+    Prints error if computer is not in the inventory.
+    """
     def refurbish(self, item_id: int, new_os: Optional[str] = None):
-        if self.item_id in self.inventory:
+        if item_id in self.inventory:
             computer = self.inventory[item_id] # locate the computer
             if int(computer["year_made"]) < 2000:
                 computer["price"] = 0 # too old to sell, donation only

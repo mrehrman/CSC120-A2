@@ -1,3 +1,4 @@
 Use this file to record your reflection on this assignment. 
 
 What worked, what didn't, what advice would you give someone taking this course in the future?
+I found that it worked best for me to get my entire Computer class figured out and then move on to the Resale Shop class. My biggest struggle was getting the methods in my Resale Shop class to print error messages rather than stop running if they received an item ID not in the shop inventory. My advice to a future student is to start simpler than you think. Most of the assignment is really as simple as copying and pasting the functions and adding "self" to some parts of them.
